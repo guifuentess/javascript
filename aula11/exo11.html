@@ -9,17 +9,19 @@
 <body>
     <h1>Sistema de ESTRANGEIRO ou BR</h1>
     Vivendo em: <input type="text" name="pais" id="pais">
-    <input type="button" value="Verificar">
+    <input type="button" value="Verificar" onclick="calcular()">
     <div id="res">
 
     </div>
     <script>
-        var pais = window.document.getElementById('pais')
-        var res = window.document.getElementById('res')
-        if (pais == Brasil) {
-            res.innerHTML += 'Brasileiro'
-        } else {
-            res.innerHTML += 'Estrangeiro'
+        function calcular() {
+            var pais = window.document.getElementById('pais')
+            var res = window.document.querySelector('div#res')
+            if (pais == Brasil) {
+                res.innerHTML == 'Brasileiro'
+            } else {
+                res.innerHTML == 'Estrangeiro'
+            }
         }
     </script>
 </body>
